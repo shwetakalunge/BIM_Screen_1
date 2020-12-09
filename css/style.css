@@ -1,0 +1,114 @@
+.clearfix {
+    zoom: 1
+}
+
+html,
+body {
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+.left,
+.right {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    width: 60%;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 202, 187, 0.16)), to(rgba(236, 92, 35, 0.9)));
+    background: linear-gradient(180deg, rgba(243, 202, 187, 0.16) 0%, rgba(236, 92, 35, 0.9) 100%);
+}
+
+.right {
+    width: 40%;
+    right: 0;
+}
+.logo_class{
+    width: 100px;
+height: 113px;
+}
+.right_block {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-family: Saira;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 26px;
+}
+
+h2 {
+    font-family: Saira;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.login-box {
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 10px;
+    padding: 4px 0;
+    margin: 10px 0;
+    border-bottom: 1px solid grey
+}
+
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 20px;
+    width: 80%;
+    margin: 5px;
+    font-family: Saira;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.btn {
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    margin: 12px 0;
+    font-family: Saira;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+label {
+    font-family: Saira;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 00px;
+    color: #7E7E7E;
+
+}
