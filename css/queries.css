@@ -3,7 +3,9 @@
 
 /*SMALL-PHONES FROM LESS or EQUAL TO 480 PIXEL*/
 @media only screen and (max-width:480px) {
-
+    .Section_Login1{
+      
+    }
     h1 {
         font-weight: 600;
         font-size: 25px;
