@@ -6,7 +6,7 @@ html,
 body {
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
-   
+
 }
 
 .clearfix:after {
@@ -16,6 +16,7 @@ body {
     height: 0;
     visibility: hidden
 }
+
 @font-face {
     font-family: saira-bold;
     src: url(Saira-Bold.ttf)
@@ -25,46 +26,69 @@ body {
     font-family: saira-regular;
     src: url(Saira-Regular.ttf)
 }
+
+@font-face {
+    font-family: saira-medium;
+    src: url(Saira-Medium.ttf)
+}
+
 /*-----------------------------------------------------------------------------------------------------------------*/
-.left,
-.right {
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
+
+.Section_Login1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .left {
-    width: 60%;
+ 
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(243, 202, 187, 0.16)), to(rgba(236, 92, 35, 0.9))),url(../images/hero.png);
+ 
+    background-image:linear-gradient(180deg, rgba(243, 202, 187, 0.16) 0%, rgba(236, 92, 35, 0.9) 100%),url(../images/hero.png);
+    width: 100%;
     left: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 202, 187, 0.16)), to(rgba(236, 92, 35, 0.9)));
-    background: linear-gradient(180deg, rgba(243, 202, 187, 0.16) 0%, rgba(236, 92, 35, 0.9) 100%);
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+     background-size: cover;
 }
 
 .right {
-    width: 40%;
-    right: 0;
+    width: 100%;
+    max-width: 500px;
+    -webkit-box-flex: 500px;
+    -ms-flex: 500px;
+    flex: 500px;
 }
-.logo_class{
+
+.logo_class {
     width: 100px;
-height: 113px;
+    height: 113px;
+
 }
+
 .right_block {
     text-align: center;
     margin-top: 50px;
 }
 
 h1 {
-   font-family: saira-bold;
+    font-family: saira-bold;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
     line-height: 26px;
+    margin: 29px 0px 21px;
 }
 
 h2 {
-   font-family: saira-regular;
+    font-family: saira-regular;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -73,9 +97,9 @@ h2 {
 }
 
 .login-box {
-    width: 60%;
-    margin-top: 50px;
-    margin-left: 50px;
+    width: 100%;
+    max-width: 260px;
+    margin: 40px auto;
 }
 
 .textbox {
@@ -91,20 +115,17 @@ h2 {
     border: none;
     outline: none;
     background: none;
-    color: black;
+    color: #000000;
     font-size: 20px;
     width: 100%;
-    margin: 5px;
-   font-family: saira-regular;
-    font-style: normal;
-    font-weight: 500;
+    font-family: saira-medium;
 }
 
 .btn {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
-    margin: 12px 0;
+    margin: 71px 0px 0px;
     font-family: saira-regular;
     font-style: normal;
     font-weight: 500;
@@ -119,5 +140,6 @@ label {
     font-size: 14px;
     line-height: 00px;
     color: #7E7E7E;
+    margin: 26px 0px 0px;
 
 }
